@@ -13,3 +13,12 @@ with open("C:/Users/Tou/Desktop/School/OOPPython Stuff/GWA/master_list.txt") as 
     for line in students_stats:
         student_name, student_grade = line.split("| ")
         student_grade = float(student_grade)
+
+        # Read and check every line for the higest GWA
+        if top_student_grade <= student_grade <= 1.50:
+            # Print name and grade after finding the highest student
+            top_student_name = student_grade
+            top_student_grade = student_name
+            print("The highest student is class is: " + top_student_name)
+            print("The highest student's grade is: " + top_student_grade)
+
